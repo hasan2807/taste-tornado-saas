@@ -10,20 +10,29 @@ export default function Home() {
       flexDirection: 'column', 
       alignItems: 'center', 
       justifyContent: 'center',
-      fontFamily: 'sans-serif'
+      fontFamily: 'sans-serif',
+      padding: '20px'
     }}>
-      <h1 style={{ color: '#ffcc00', fontSize: '40px' }}>🌪️ Taste Tornado</h1>
-      <p>ডিজিটাল মেনু কার্ডটি লোড হচ্ছে...</p>
+      <h1 style={{ color: '#ffcc00', fontSize: '40px', marginBottom: '10px' }}>🌪️ Taste Tornado</h1>
+      <p style={{ fontSize: '18px' }}>আপনার ডিজিটাল মেনু কার্ড এখন লাইভ!</p>
       
       <div style={{ 
-        marginTop: '20px', 
-        padding: '15px', 
-        border: '1px solid #ffcc00', 
-        borderRadius: '10px',
+        marginTop: '30px', 
+        padding: '20px', 
+        border: '2px solid #ffcc00', 
+        borderRadius: '15px',
         textAlign: 'center'
       }}>
-        <h3 style={{ margin: '0' }}>🍔 Burger - ৳250</h3>
-        <p style={{ fontSize: '14px', color: '#aaa' }}>Special Crispy Chicken</p>
+        <h3 style={{ margin: '0 0 10px 0' }}>🍔 Special Burger</h3>
+        <p style={{ color: '#ffcc00', fontWeight: 'bold', fontSize: '20px' }}>৳ ২৫০</p>
+        <button style={{ 
+          backgroundColor: '#ffcc00', 
+          border: 'none', 
+          padding: '10px 20px', 
+          borderRadius: '8px', 
+          fontWeight: 'bold',
+          cursor: 'pointer' 
+        }}>অর্ডার করুন</button>
       </div>
     </main>
   );
