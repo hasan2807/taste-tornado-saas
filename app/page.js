@@ -19,20 +19,20 @@ export default function Home() {
   return (
     <div style={{ backgroundColor: '#121212', color: 'white', minHeight: '100vh', padding: '20px', fontFamily: 'sans-serif' }}>
       <h1 style={{ color: '#ffcc00', textAlign: 'center' }}>🌪️ Taste Tornado POS</h1>
-      <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(200px, 1fr))', gap: '20px', marginTop: '30px' }}>
+      <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(250px, 1fr))', gap: '20px', marginTop: '30px' }}>
         {menu.map((item) => (
-          <div key={item.id} style={{ border: '1px solid #333', padding: '15px', borderRadius: '10px', textAlign: 'center', backgroundColor: '#1e1e1e' }}>
-            <div style={{ fontSize: '40px' }}>{item.img}</div>
-            <h3>{item.name}</h3>
-            <p>Price: {item.price} BDT</p>
-            <button onClick={() => addToCart(item)} style={{ backgroundColor: '#ffcc00', border: 'none', padding: '10px 20px', borderRadius: '5px', cursor: 'pointer', fontWeight: 'bold' }}>Add to Cart</button>
+          <div key={item.id} style={{ border: '1px solid #333', padding: '20px', borderRadius: '15px', textAlign: 'center', backgroundColor: '#1e1e1e' }}>
+            <div style={{ fontSize: '50px' }}>{item.img}</div>
+            <h2>{item.name}</h2>
+            <p style={{ color: '#ffcc00', fontSize: '20px' }}>{item.price} BDT</p>
+            <button onClick={() => addToCart(item)} style={{ backgroundColor: '#ffcc00', border: 'none', padding: '12px 24px', borderRadius: '8px', cursor: 'pointer', fontWeight: 'bold', width: '100%' }}>Add to Cart</button>
           </div>
         ))}
       </div>
-      <div style={{ marginTop: '40px', borderTop: '2px solid #ffcc00', paddingTop: '20px', textAlign: 'center' }}>
+      <div style={{ marginTop: '50px', borderTop: '2px solid #ffcc00', paddingTop: '20px', textAlign: 'center' }}>
         <h2>Cart Summary</h2>
-        <p>Items in Cart: {cart.length}</p>
-        <h3>Total: {total} BDT</h3>
+        <p>Total Items: {cart.length}</p>
+        <h3 style={{ color: '#ffcc00' }}>Total Bill: {total} BDT</h3>
       </div>
     </div>
   );
